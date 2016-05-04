@@ -10,6 +10,7 @@
 
 using System;
 using System.Runtime.InteropServices;
+using System.Threading.Tasks;
 
 public class Startup
 {
@@ -21,16 +22,14 @@ public class Startup
         IntPtr lParam
     );
 
-    public async Task<object> Invoke(dynamic payload)
+    public async Task<object> Invoke(object input)
     {
-        return await Task.FromResult(() => {
-            SendMessage(
-                (IntPtr)0xffff, // HWND_BROADCAST
-                0x0112,         // WM_SYSCOMMAND
-                (IntPtr)0xf170, // SC_MONITORPOWER
-                (IntPtr)0x0002  // POWER_OFF
-            );
-            return null;
-        });
+        SendMessage(
+            (IntPtr)0xffff, // HWND_BROADCAST
+            0x0112,         // WM_SYSCOMMAND
+            (IntPtr)0xf170, // SC_MONITORPOWER
+            (IntPtr)0x0002  // POWER_OFF
+        );
+        return (object)null;
     }
 }

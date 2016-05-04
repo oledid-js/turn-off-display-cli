@@ -22,6 +22,6 @@
   "author": "Ole Morten Didriksen",
   "license": "MIT",
   "optionalDependencies": {
-    "edge": "^4.0.0"
+    "edge": "^5.0.0"
   }
 }
