@@ -1,6 +1,6 @@
 # turn-off-display-cli
 
-Turns of the computer monitor/display/screen via command-line.
+Turns off the computer monitor/display/screen via command-line.
 
 ## Supported operating systems
 
