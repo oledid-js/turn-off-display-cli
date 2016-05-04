@@ -8,7 +8,7 @@ This package only supports Windows for now. If you want to add support for anoth
 
 ## How to install
 ```
-npm install -g oledid/turn-off-display-cli
+npm install -g turn-off-display-cli
 ```
 
 ## How to use
