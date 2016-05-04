@@ -1,0 +1,27 @@
+{
+  "name": "turn-off-display-cli",
+  "version": "0.0.1",
+  "description": "Turn off the display via command-line",
+  "bin": {
+    "turn-off-display": "src/cli.js"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=4"
+  },
+  "keywords": [
+    "turn",
+    "off",
+    "display",
+    "screen",
+    "monitor",
+    "cli"
+  ],
+  "author": "Ole Morten Didriksen",
+  "license": "MIT",
+  "optionalDependencies": {
+    "edge": "^4.0.0"
+  }
+}
