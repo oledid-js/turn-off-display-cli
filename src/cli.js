@@ -4,12 +4,19 @@
 const os = require("os");
 const path = require("path");
 
+const offMessage = "Display off.";
+
 class Program {
     main() {
         const platform = os.platform();
         switch (platform) {
             case "win32": {
                 this.win32();
+                break;
+            }
+
+            case "darwin": {
+                this.darwin();
                 break;
             }
 
@@ -37,8 +44,24 @@ class Program {
             if (error) {
                 throw error;
             }
-            console.log("Display off.");
+            console.log(offMessage);
         });
+    }
+
+    darwin() {
+        if (os.release() >= "13.0.0") {
+            const execFile = require("child_process").execFile;
+            execFile("pmset", ["displaysleepnow"], (error, stdout, stderr) => {
+                if (error) {
+                    throw error;
+                }
+                console.log(offMessage);
+            });
+        }
+        else {
+            console.log("OS X < 10.9 is not supported.");
+            process.exit(1);
+        }
     }
 }
 

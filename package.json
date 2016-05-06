@@ -1,6 +1,6 @@
 {
   "name": "turn-off-display-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Turn off the display via command-line",
   "bin": {
     "turn-off-display": "src/cli.js"
@@ -12,8 +12,7 @@
     "node": ">=4"
   },
   "keywords": [
-    "turn",
-    "off",
+    "turn off",
     "display",
     "screen",
     "monitor",
@@ -33,5 +32,5 @@
     "type": "git",
     "url": "https://github.com/oledid/turn-off-display-cli.git"
   },
-  "os": ["win32"]
+  "os": ["win32", "darwin"]
 }

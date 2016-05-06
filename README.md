@@ -4,7 +4,7 @@ Turns off the computer monitor/display/screen via command-line.
 
 ## Supported operating systems
 
-This package only supports Windows for now. If you want to add support for another operating system, please submit a pull-request.
+This package only supports Windows and OS X >= 10.9 for now. If you want to add support for another operating system, please submit a pull-request.
 
 ## How to install
 ```
