@@ -1,6 +1,6 @@
 {
   "name": "turn-off-display-cli",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Turn off the display via command-line",
   "bin": {
     "turn-off-display": "src/cli.js"
