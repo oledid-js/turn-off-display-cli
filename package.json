@@ -1,6 +1,6 @@
 {
   "name": "turn-off-display-cli",
-  "version": "0.0.7",
+  "version": "0.0.9",
   "description": "Turn off the display via command-line",
   "bin": {
     "turn-off-display": "src/cli.js"
@@ -20,17 +20,22 @@
   ],
   "author": "Ole Morten Didriksen (https://github.com/oledid)",
   "license": "MIT",
-  "optionalDependencies": {
-    "edge": "^5.0.0"
-  },
   "homepage": "https://github.com/oledid/turn-off-display-cli",
   "bugs": {
     "url": "https://github.com/oledid/turn-off-display-cli/issues"
   },
-  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/oledid/turn-off-display-cli.git"
   },
-  "os": ["win32", "darwin"]
+  "os": [
+    "win32",
+    "darwin"
+  ],
+  "dependencies": {
+    "turn-off-display": "0.0.9"
+  },
+  "optionalDependencies": {
+    "edge": "^5.0.0"
+  }
 }
