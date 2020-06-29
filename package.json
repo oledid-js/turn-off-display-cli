@@ -1,6 +1,6 @@
 {
   "name": "turn-off-display-cli",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Turn off the display via command-line",
   "bin": {
     "turn-off-display": "src/cli.js"
@@ -30,6 +30,6 @@
     "darwin"
   ],
   "dependencies": {
-    "turn-off-display": "^0.1.0"
+    "turn-off-display": "^0.2.0"
   }
 }
